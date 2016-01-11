@@ -1,6 +1,4 @@
 class API < Grape::API
-  default_format :json
-
   mount API::Users => '/users'
 
   add_swagger_documentation(
