@@ -15,6 +15,10 @@ gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
