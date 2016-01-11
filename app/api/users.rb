@@ -5,8 +5,8 @@ module Entities
 end
 
 class Users < Grape::API
-  desc 'get all users', entity: Entities::User
-  get '/all' do
+  desc 'get users', entity: Entities::User
+  get '/' do
     present User.all, with: Entities::User
   end
 end
