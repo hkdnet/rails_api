@@ -5,18 +5,19 @@ gem 'rails', '4.2.5'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
-
-
-gem 'sqlite3'
-
 gem 'grape'
 gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
 
+group :development do
+  gem 'spring'
+  gem 'sqlite3'
+end
+
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 # To use ActiveModel has_secure_password

@@ -85,6 +85,7 @@ GEM
     multi_xml (0.5.5)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
+    pg (0.17.1)
     rack (1.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -152,6 +153,7 @@ DEPENDENCIES
   grape-entity
   grape-swagger
   grape-swagger-rails
+  pg
   rails (= 4.2.5)
   rails-api
   rails_12factor
